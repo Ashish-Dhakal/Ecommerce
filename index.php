@@ -42,6 +42,7 @@
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Home</a></li>
+                        <li><a href="./auth/login.php">Login</a></li>
                     </ul>
                 </nav>
             </nav>

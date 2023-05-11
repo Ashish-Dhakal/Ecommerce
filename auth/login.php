@@ -29,11 +29,11 @@
                     </div>
 
                     <div class="field button-field">
-                        <a href="#" class="btn"> Login</a>
+                        <a href="../dashboard/user.php" class="btn"> Login</a>
                     </div>
 
                     <div class="form-link">
-                        <span> Register an account <a href="#" class="signup link"> Register</a></span>
+                        <span> Register an account <a href="./register.php" class="signup link"> Register</a></span>
                     </div>
 
 
