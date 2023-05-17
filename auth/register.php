@@ -15,37 +15,39 @@
 
 <body>
     <section class="container forms">
-        <siv class="form login">
+        <div class="form login">
             <div class="form-content">
-                <header>Registration</header>
-                <form action="./update.php" method="$_POST">
+                <h3>Registration</h3>
+                <form action="./update.php" method="POST">
                     <div class="field input-field">
-                        <input type="text" placeholder="First Name" class="input" required>
+                        <input type="text" placeholder="First Name" class="input" name="fname" required>
                     </div>
 
                     <div class="field input-field">
-                        <input type="text" placeholder="Last Name" class="input" required>
+                        <input type="text" placeholder="Last Name" class="input" name="lname" required>
                     </div>
 
                     <div class="field input-field">
-                        <input type="number" placeholder="Phone No." class="input" required>
+                        <input type="number" placeholder="Phone No." class="input" name="contact" required>
                     </div>
 
                     <div class="field input-field">
-                        <input type="text" placeholder="Address" class="input" required>
+                        <input type="text" placeholder="Address" class="input" name="address" required>
                     </div>
 
                     <div class="field input-field">
-                        <input type="email" placeholder="Email" class="input" required>
+                        <input type="email" placeholder="Email" class="input" name="email" required>
                     </div>
 
                     <div class="field input-field">
-                        <input type="password" placeholder="Password" class="password" required>
+                        <input type="password" placeholder="Password" class="password" name="password" required>
                         <i class="bx bx-hide eye-icon"></i>
                     </div>
 
                     <div class="field button-field">
-                        <a href="" class="btn"> Register</a>
+
+                        <!-- <button type="submit" class="btn" name="submit"> Register</button> -->
+                        <a href="" class="signup link" name="submit"> Register</a>
                     </div>
 
                     <div class="form-link">
@@ -55,7 +57,7 @@
 
                 </form>
             </div>
-        </siv>
+        </div>
     </section>
 
 </body>
