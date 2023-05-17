@@ -3,12 +3,12 @@
 <?php
     if (isset($_POST['submit'])) {
 
-        $c_fname = $_POST['fname'];
-        $c_lname = $_POST['lname'];
-        $c_address = $_POST['address'];
-        $c_contactno = $_POST['contact'];
-        $c_email = $_POST['email'];
-        $c_pass = $_POST['password'];
+        $c_fname = mysqli_real_escape_string($conn, $_POST['fname']);
+        $c_lname = mysqli_real_escape_string($conn, $_POST['lname']);
+        $c_address = mysqli_real_escape_string($conn, $_POST['address']);
+        $c_contactno = mysqli_real_escape_string($conn, $_POST['contact']);
+        $c_email = mysqli_real_escape_string($conn, $_POST['email']);
+        $c_pass = mysqli_real_escape_string($conn, $_POST['password']);
 
 
         $query = "INSERT INTO customer (c_fname	,c_lname,c_address,c_contactno,	c_email,c_pass) VALUES ('$c_fname','$c_lname' , '$c_address','$c_contactno' ,'$c_email' , '$c_pass' )";
@@ -27,3 +27,4 @@
     }
     
     ?> 
+
