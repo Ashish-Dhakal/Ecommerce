@@ -46,8 +46,9 @@
 
                     <div class="field button-field">
 
-                        <!-- <button type="submit" class="btn" name="submit"> Register</button> -->
-                        <a href="" class="signup link" name="submit"> Register</a>
+                        <button type="submit" class="btn" name="submit"> Register</button>
+                        <!-- <input class="signup link" type="button" name="submit" value="Register"> -->
+                        <!-- <a href="#" class="signup link" name="submit"> Register</a> -->
                     </div>
 
                     <div class="form-link">
@@ -62,4 +63,3 @@
 
 </body>
 
-</html>
