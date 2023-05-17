@@ -23,7 +23,8 @@
     height: 5rem;
     display: flex;
     align-items: center;
-    padding-left: 1rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
 .mall-name{
@@ -59,7 +60,8 @@
     height: 3rem;
     background-color:var(--maincoloor);
     align-items: center;
-    padding-left: 30px;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
 .navbar li{
