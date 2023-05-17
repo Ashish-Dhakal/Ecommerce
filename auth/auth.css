@@ -29,10 +29,10 @@
     border-radius: 6px;
     background-color:var(--miancolor);
 }
-header{
+.form-content h3{
     font-size: 20px;
     font-weight: 600;
-    color: black;
+    color: var(--white);
     text-align: center;
 }
 form{
@@ -83,6 +83,4 @@ color: var(--black);
 }
 a:hover{
   color: var(--light_wihite);  
-  
-  
 }
