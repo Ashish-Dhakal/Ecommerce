@@ -44,16 +44,16 @@ if  (isset($_POST['login'])) {
 
 //query to admin login
 
-if (isset($_POST['login'])) {
+if (isset($_POST['admin_login'])) {
 
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $pass = mysqli_real_escape_string($conn, $_POST['password']);
 
     $query2 = "SELECT * FROM admin WHERE a_email = '$email' AND a_pass = '$pass'";
-    $result = $conn->query($query2);
-    $row = $result->fetch_assoc();
+    $result1 = $conn->query($query2);
+    $row = $result1->fetch_assoc();
 
-    if ($result->num_rows == 1) {
+    if ($result1->num_rows == 1) {
         header("Location: ../dashboard/admin.php");
         exit();
     } else {
