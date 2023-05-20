@@ -29,7 +29,7 @@
                     </div>
 
                     <div class="field button-field">
-                        <button type="submit" class="btn" name="login"> Login</button>
+                        <button type="submit" class="btn" name="admin_login"> Login</button>
                     </div>
 
                 </form>
