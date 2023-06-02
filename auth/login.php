@@ -15,9 +15,9 @@
 
 <body>
     <section class="container forms">
-        <siv class="form login">
+        <div class="form login">
             <div class="form-content">
-                <header>User Login</header>
+                <h3>User Login</h3>
                 <form action="./update.php" method="POST">
                     <div class="field input-field">
                         <input type="email" placeholder="Email" class="input" name="email">
@@ -39,7 +39,7 @@
 
                 </form>
             </div>
-        </siv>
+        </div>
     </section>
 
 </body>
