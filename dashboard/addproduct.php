@@ -1,4 +1,3 @@
-<?php include '../header.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,62 +15,67 @@
 </head>
 
 <body>
-
-    <div class="wrapper">
-        <div class="title">
-            Add Product To Website
+    <?php include '../dashboard/admin-dash.php'; ?>
+    <!---------------start of main section------------------>
+    <main class="main-container main-addproduct-container">
+        <div class="main-title">
+            Add Product
         </div>
-        <form action="" class="form">
-            <div class="input_field ">
-                <label>Product Name</label>
-                <input class="input" type="text" name="p-name">
-            </div>
-            <div class="input_field ">
-                <label>Product Category</label>
-                <div class="select_item">
-                    <select class="input" name="category" id="category">
-                        <option value="">Select Category</option>
-                        <option value="1">Electronic Device</option>
-                        <option value="2">TV and Home Appliance</option>
-                        <option value="3">Electronic Accessories</option>
-                        <option value="4">Gadget</option>
-                    </select>
+        <div class="wrapper">
+
+            <form action="" class="form">
+                <div class="input_field ">
+                    <label>Product Name</label>
+                    <input class="input" type="text" name="p-name">
                 </div>
-            </div>
-            <div class=" input_field">
-                <label for="product">Select Product</label>
-                <div class="select_item">
-                    <select class="input" name="product" id="product">
-                        <option value="">Select Category First</option>
-                    </select>
+                <div class="input_field ">
+                    <label>Product Category</label>
+                    <div class="select_item">
+                        <select class="input" name="category" id="category">
+                            <option value="">Select Category</option>
+                            <option value="1">Electronic Device</option>
+                            <option value="2">TV and Home Appliance</option>
+                            <option value="3">Electronic Accessories</option>
+                            <option value="4">Gadget</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <div class=" input_field">
-                <label>Product Brand</label>
-                <input class="input" type="text" name="p-name">
-            </div>
-            <div class=" input_field">
-                <label>Product Descri</label>
-                <textarea class="textarea" cols="30" rows="10"></textarea>
-            </div>
+                <div class=" input_field">
+                    <label for="product">Select Product</label>
+                    <div class="select_item">
+                        <select class="input" name="product" id="product">
+                            <option value="">Select Category First</option>
+                        </select>
+                    </div>
+                </div>
+                <div class=" input_field">
+                    <label>Product Brand</label>
+                    <input class="input" type="text" name="p-name">
+                </div>
+                <div class=" input_field">
+                    <label>Product Description</label>
+                    <textarea class="textarea" cols="30" rows="10"></textarea>
+                </div>
 
-            <div class=" input_field">
-                <label>Product Image</label>
-                <input class="input" type="file" accept="image/png , image/jpg , image/jpeg " name="p-name">
-            </div>
+                <div class=" input_field">
+                    <label>Product Image</label>
+                    <input class="input" type="file" accept="image/png , image/jpg , image/jpeg " name="p-name">
+                </div>
 
-            <div class=" input_field">
-                <label>Product Price</label>
-                <input class="input" type="text" name="p-name">
-            </div>
+                <div class=" input_field">
+                    <label>Product Price</label>
+                    <input class="input" type="text" name="p-name">
+                </div>
 
-            <div class="input_field">
-                <div class="btn">Add Product</div>
-            </div>
+                <div class="input_field">
+                    <div class="btn">Add Product</div>
+                </div>
 
 
-        </form>
-    </div>
+            </form>
+        </div>
+    </main>
+    <!--------------end of main section--------------->
 
 
 
