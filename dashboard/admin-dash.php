@@ -38,25 +38,24 @@
         <aside id="sidebar">
             <div class="sidebar-title">
                 <div class="sidebar-brand">
-                   E-Mall
+                    <a href="./admin-dashboard.php">E-Mall</a>
                 </div>
                 <span class="material-symbols-outlined" onclick="closeSidebar()">close</span>
             </div>
             <ul class="sidebar-list">
-                <li class="sidebar-list-item"><a href="">Dashboard</a></li>
-                <li class="sidebar-list-item"><a href="">Add Product</a></li>
+                <li class="sidebar-list-item"><a href="./admin-dashboard.php">Dashboard</a></li>
+                <li class="sidebar-list-item"><a href="./addproduct.php">Add Product</a></li>
                 <li class="sidebar-list-item"><a href="">Ordered Product</a></li>
                 <li class="sidebar-list-item"><a href="">Product Process</a></li>
                 <li class="sidebar-list-item"><a href="">Manage Product</a></li>
             </ul>
 
         </aside>
-    
-    </div>
 
 
 
-    <script src="js/script.js"></script>
+
+        <script src="js/script.js"></script>
 </body>
 
 </html>
