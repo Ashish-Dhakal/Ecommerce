@@ -38,7 +38,7 @@
         <aside id="sidebar">
             <div class="sidebar-title">
                 <div class="sidebar-brand">
-                    <span class="material-symbols-outlined">mood</span> E-Mall
+                   E-Mall
                 </div>
                 <span class="material-symbols-outlined" onclick="closeSidebar()">close</span>
             </div>
@@ -51,7 +51,7 @@
             </ul>
 
         </aside>
-        <footer class="footer-container"></footer>
+    
     </div>
 
 

@@ -31,7 +31,7 @@ body{
 
 .grid-container{
     display: grid;
-    grid-template-columns: 260px 1fr 1fr 1fr;    grid-template-rows: 0.2fr 4fr;
+    grid-template-columns: 230px 1fr 1fr 1fr;    grid-template-rows: 0.2fr 4fr;
     grid-template-areas: 
     "sidebar header header header"
     "sidebar main main main";
@@ -53,7 +53,9 @@ box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
     align-items: end;
 }
 
-/* side bar css */
+/*-------------------side bar css starts here--------------*/ 
+
+
 .menu-icon{
     display: none;
 }
@@ -61,8 +63,8 @@ box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
 #sidebar{
     grid-area: sidebar;
     height: 100% ;
-    background-color:rgb(29,38,154);
-    color: rgb(255,255,255);
+    background-color:var(--maincoloor);
+    color:var(--black);
     overflow-y: auto;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -70,10 +72,10 @@ box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
 
 .sidebar-title{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 20px 20px 20px;
+    padding: 20px ;
     margin-bottom: 30px;
+    color: var(--light_wihite);
 }
 
 .sidebar-title > span{
@@ -86,12 +88,13 @@ box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
 }
 .sidebar-list{
     padding: 0;
-    margin-top: 15px;
+    margin-top: -26px;
     list-style: none;
+    padding-left: 15px;
 }
 
 .sidebar-list-item{
-    padding: 20px 20px 20px 20px;
+    padding: 10px;
     font-size: 18px;
 }
 
@@ -103,7 +106,8 @@ box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
 
 .sidebar-list-item >a {
     text-decoration: none;
-    color: rgb(180,184,244);
+    color: var(--light_wihite);
+    
 
 }
 
@@ -111,9 +115,9 @@ box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
     display: inline !important;
     position: absolute;
 }
-/* side bar css ends */
+/*-----------------side bar css ends here------------- */
 
-/* main page css */
+/*-------------------------main page css------------------------ */
 
 .main-container{
 grid-area: main;
@@ -193,14 +197,9 @@ padding: 20px ;
 
 
 
-/* main page css ends */
-/* .footer-container{
-    grid-area: footer;
-    height: 70px;
-    background-color: cadetblue;
+/*-----------------main page css ends here----------------*/
 
-} */
-/* -----------media queries---------- */
+/*----------------media queries starts---------------- */
 
 /* medium <= 992px */
 @media screen and (max-width: 992px){
@@ -237,3 +236,4 @@ padding: 20px ;
         display: none;
     }
 }
+/*-------------------media query ends here----------------- */
