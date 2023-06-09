@@ -16,7 +16,8 @@
 <body>
     <section class="container forms">
         <siv class="form login">
-            <div class="form-content">                    <h3>Admin Login</h3>
+            <div class="form-content">
+                 <h3>Admin Login</h3>
                 <form action="./update.php" method="POST">
                     <div class="field input-field">
                         <input type="email" placeholder="Email" class="input" name="email">
