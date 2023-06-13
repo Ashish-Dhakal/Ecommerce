@@ -41,7 +41,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="./auth/login.php">Login</a></li>
             </ul>
         </nav>
        </div>
@@ -51,5 +51,3 @@
 
 </section>
     </div>
-</body>
-</html>
