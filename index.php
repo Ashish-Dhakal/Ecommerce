@@ -12,20 +12,25 @@
     <?php include './header.php'; ?>
     <!-- home section starts here -->
     <div class="hero-section">
-       
+
         <div class="img-slider">
 
             <div class="slide active">
-                <img src="resources/image/slider-img1.png" alt="">
+                <div class="image">
+                    <img src="resources/image/slider-img1.png" alt="">
+                </div>
+
 
                 <div class="l-info ">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic placeat distinctio facilis quidem velit autem iure dolorum nobis cum</p>
                 </div>
-
             </div>
 
             <div class="slide">
-                <img src="resources/image/slider-img2.png" alt="">
+
+                <div class="image">
+                    <img src="resources/image/slider-img2.png" alt="">
+                </div>
 
                 <div class="r-info ">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic placeat distinctio facilis quidem velit autem iure dolorum nobis cum</p>
@@ -35,7 +40,10 @@
 
 
             <div class="slide">
-                <img src="resources/image/slider-img3.png" alt="">
+
+                <div class="image">
+                    <img src="resources/image/slider-img3.png" alt="">
+                </div>
 
                 <div class="l-info ">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic placeat distinctio facilis quidem velit autem iure dolorum nobis cum</p>
@@ -45,7 +53,10 @@
 
 
             <div class="slide">
-                <img src="resources/image/slider-img4.png" alt="">
+
+                <div class="image">
+                    <img src="resources/image/slider-img4.png" alt="">
+                </div>
 
                 <div class="r-info ">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic placeat distinctio facilis quidem velit autem iure dolorum nobis cum</p>
