@@ -23,7 +23,7 @@
         </div>
         <div class="wrapper">
 
-            <form action="" class="form">
+            <form action="" class="form" method="post" enctype="multipart/form-data">
                 <div class="input_field ">
                     <label>Product Name</label>
                     <input class="input" type="text" name="p-name">

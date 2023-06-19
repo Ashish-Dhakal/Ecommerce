@@ -18,7 +18,7 @@
         <div class="form login">
             <div class="form-content">
                 <h3>Registration</h3>
-                <form action="./update.php" method="POST">
+                <form action="./update.php" method="POST" enctype="multipart/form-data">
                     <div class="field input-field">
                         <input type="text" placeholder="First Name" class="input" name="fname" required>
                     </div>
