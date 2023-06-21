@@ -23,52 +23,53 @@
         </div>
         <div class="wrapper">
 
-            <form action="" class="form" method="post" enctype="multipart/form-data">
+            <form action="./update.php" class="form" method="post" enctype="multipart/form-data">
                 <div class="input_field ">
                     <label>Product Name</label>
-                    <input class="input" type="text" name="p-name">
+                    <input class="input" type="text" name="p_name">
                 </div>
                 <div class="input_field ">
                     <label>Product Category</label>
                     <div class="select_item">
-                        <select class="input" name="category" id="category">
+                        <select class="input" name="p_category" id="category">
                             <option value="">Select Category</option>
-                            <option value="1">Electronic Device</option>
-                            <option value="2">TV and Home Appliance</option>
-                            <option value="3">Electronic Accessories</option>
-                            <option value="4">Gadget</option>
+                            <option value="ElectronicDevice">Electronic Device</option>
+                            <option value="TVandHomeAppliance">TV and Home Appliance</option>
+                            <option value="ElectronicAccessories">Electronic Accessories</option>
+                            <option value="Gadget">Gadget</option>
                         </select>
                     </div>
                 </div>
                 <div class=" input_field">
-                    <label for="product">Select Product</label>
+                    <label for="product">Select Sub-Category</label>
                     <div class="select_item">
-                        <select class="input" name="product" id="product">
+                        <select class="input" name="p_subcategory" id="product">
                             <option value="">Select Category First</option>
                         </select>
                     </div>
                 </div>
                 <div class=" input_field">
                     <label>Product Brand</label>
-                    <input class="input" type="text" name="p-name">
+                    <input class="input" type="text" name="p_brand">
                 </div>
                 <div class=" input_field">
                     <label>Product Description</label>
-                    <textarea class="textarea" cols="30" rows="10"></textarea>
+                    <textarea class="textarea" name="p_description" cols="30" rows="10"></textarea>
                 </div>
 
                 <div class=" input_field">
                     <label>Product Image</label>
-                    <input class="input" type="file" accept="image/png , image/jpg , image/jpeg " name="p-name">
+                    <input class="input" type="file" accept="image/png , image/jpg , image/jpeg " name="p_image">
                 </div>
 
                 <div class=" input_field">
                     <label>Product Price</label>
-                    <input class="input" type="text" name="p-name">
+                    <input class="input" type="text" name="p_price">
                 </div>
 
                 <div class="input_field">
-                    <div class="btn">Add Product</div>
+                    <!-- <div class="btn">Add Product</div> -->
+                    <button type="submit" class="btn" name="add-product"> Add Product</button>
                 </div>
 
 
@@ -90,12 +91,12 @@
 
 
     <script>
-        // Define the products for each category
+        // // Define the products for each category
         var products = {
-            1: ["Smart Phone", "Laptop", "Desktop", "Camera"],
-            2: ["TV", "Vacuum", "Audio Device", "Fridge", "A.C"],
-            3: ["Mobile Accessories", "Camera Accessories", "Computer Accessories", "Storage"],
-            4: ["Drone", "VR"]
+            ElectronicDevice: ["Smart Phone", "Laptop", "Desktop", "Camera"],
+            TVandHomeAppliance: ["TV", "Vacuum", "Audio Device", "Fridge", "A.C"],
+            ElectronicAccessories: ["Mobile Accessories", "Camera Accessories", "Computer Accessories", "Storage"],
+            Gadget: ["Drone", "VR"]
         };
 
         // Get the select elements
