@@ -163,10 +163,10 @@ object-fit: cover;
 .img-slider .shopbtn a{
     color: var(--light_wihite);
     background: var(--maincoloor);
-    padding: 4px;
+    padding: 10px;
     font-weight: 500;
     font-size: 20px;
-    border-radius: 10px;
+    border-radius: 6px;
     position: relative;
     left: 25%;
     bottom: 143px;
@@ -222,4 +222,86 @@ background: var(--miancolor);
     object-fit: cover;
 }
 
-/* features product section ends here */
+/* category product section ends here */
+
+/* product display start here */
+
+
+ .category-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+ .category-info a {
+    color: var(--black);
+    display: flex;
+    align-items: center;
+}
+
+.card-category{
+    margin-top: 10px;
+    height: 390px;   
+    padding-left: 100px;
+    padding-right:100px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    margin: auto;
+}
+
+
+.card-category .card{
+    height:338px;
+    width: 250px;
+    flex: 1 1 210px;
+     }
+.card-category .card:hover{
+box-shadow: 0px 2px 21px -2px rgba(150, 150, 150, 0.73)
+}
+.card-category .card .product-image{
+    height: 260px;
+    width:100% ;
+}
+.card-category .card .product-image img{
+    height: 100%;
+    width: 100%;
+    object-fit:center;
+}
+.card-category .card .product-info{
+    padding-left: 10px;
+}
+.card-category .card .addtocart{
+    /* padding-left: 10px;
+    width: 100%;
+    color: var(--light_wihite);
+    background: var(--maincoloor);
+    display: flex;
+    align-items: center; */
+    width: 100%;
+    color: var(--miancolor);
+    font-weight: 500;
+    display: flex;
+    padding-left: 10px;
+    align-items: center; 
+}
+.card-category .card .addtocart:hover{
+    color: var(--light_wihite);
+    background: var(--maincoloor);    
+}
+.card-category .card .new-btn{
+    background: var(--miancolor);
+    color: var(--white);
+    width: 40px;
+    border-radius: 50%;
+    padding: 4px;
+    position: relative;
+    left: 78%;
+    bottom: 322px;
+}
+
+/* product display ends here */
+
