@@ -1,3 +1,7 @@
+<?php include './connection/config.php';
+$query = 'SELECT *FROM product';
+$result = $conn->query($query);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -93,6 +97,7 @@
     <!-- home section ends from here -->
 
     <!-- features product starts here -->
+
     <section class="products">
         <h4>Product Category</h4>
         <div class="all-category">
@@ -130,8 +135,53 @@
         </div>
 
     </section>
-    
+
     <!-- features product ends here -->
+
+    <!-- displaying the latest 4 uploaded Electronic Device in database start -->
+    <div class="category-info">
+        <p>Electronic Device</p>
+        <div class="show-more">
+            <a href="#"> Show more<span class="material-symbols-outlined">
+                    chevron_right
+                </span></a>
+        </div>
+    </div>
+    <div class="card-category">
+        <?php
+        while ($row = $result->fetch_assoc()) {
+        ?>
+            <div class="card">
+
+
+                <div class="product-image">
+                    <img src="<?php echo $row["p_image"] ?>" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-rating">
+
+                    </div>
+                    <p><?php echo $row["p_name"] ?></p>
+                    <p><?php echo $row["p_price"] ?></p>
+                </div>
+                <div class="addtocart">
+                    Add to cart <span class="material-symbols-outlined">
+                        shopping_bag
+                    </span>
+                </div>
+                <div class="new-btn">
+                    New
+                </div>
+
+            </div>
+        <?php
+        }
+        ?>
+    </div>
+
+   
+
+    <!-- displaying the latest 4 uploaded Electronic Device in database start -->
 
     <script src="resources/script.js">
 
