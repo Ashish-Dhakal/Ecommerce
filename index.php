@@ -1,7 +1,4 @@
-<?php include './connection/config.php';
-$query = 'SELECT *FROM product';
-$result = $conn->query($query);
-?>
+<?php include './connection/config.php';?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -134,11 +131,13 @@ $result = $conn->query($query);
             </div>
         </div>
 
+
+
     </section>
 
     <!-- features product ends here -->
 
-    <!-- displaying the latest 4 uploaded Electronic Device in database start -->
+    <!-- displaying the latest 4 uploaded all category product in database start -->
     <div class="category-info">
         <p>Electronic Device</p>
         <div class="show-more">
@@ -149,13 +148,15 @@ $result = $conn->query($query);
     </div>
     <div class="card-category">
         <?php
+        $query1 = 'SELECT * FROM product WHERE p_category = "ElectronicDevice" ORDER BY p_id DESC LIMIT 4;';
+        $result = $conn->query($query1);
         while ($row = $result->fetch_assoc()) {
         ?>
             <div class="card">
 
 
                 <div class="product-image">
-                    <img src="<?php echo $row["p_image"] ?>" alt="">
+                    <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
                 </div>
                 <div class="product-info">
                     <div class="product-rating">
@@ -179,9 +180,140 @@ $result = $conn->query($query);
         ?>
     </div>
 
-   
 
-    <!-- displaying the latest 4 uploaded Electronic Device in database start -->
+    <div class="category-info">
+        <p>TV and Homw Appliance</p>
+        <div class="show-more">
+            <a href="#"> Show more<span class="material-symbols-outlined">
+                    chevron_right
+                </span></a>
+        </div>
+    </div>
+    <div class="card-category">
+        <?php
+        $query2 = 'SELECT * FROM product WHERE p_category = "TVandHomeAppliance" ORDER BY p_id DESC LIMIT 4;';
+        $result = $conn->query($query2);
+        while ($row = $result->fetch_assoc()) {
+        ?>
+            <div class="card">
+
+
+                <div class="product-image">
+                    <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-rating">
+
+                    </div>
+                    <p><?php echo $row["p_name"] ?></p>
+                    <p><?php echo $row["p_price"] ?></p>
+                </div>
+                <div class="addtocart">
+                    Add to cart <span class="material-symbols-outlined">
+                        shopping_bag
+                    </span>
+                </div>
+                <div class="new-btn">
+                    New
+                </div>
+
+            </div>
+        <?php
+        }
+        ?>
+    </div>
+
+
+
+    <div class="category-info">
+        <p>Electronic Accessories</p>
+        <div class="show-more">
+            <a href="#"> Show more<span class="material-symbols-outlined">
+                    chevron_right
+                </span></a>
+        </div>
+    </div>
+    <div class="card-category">
+        <?php
+        $query3 = 'SELECT * FROM product WHERE p_category = "ElectronicAccessories" ORDER BY p_id DESC LIMIT 4;';
+        $result = $conn->query($query3);
+        while ($row = $result->fetch_assoc()) {
+        ?>
+            <div class="card">
+
+
+                <div class="product-image">
+                    <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-rating">
+
+                    </div>
+                    <p><?php echo $row["p_name"] ?></p>
+                    <p><?php echo $row["p_price"] ?></p>
+                </div>
+                <div class="addtocart">
+                    Add to cart <span class="material-symbols-outlined">
+                        shopping_bag
+                    </span>
+                </div>
+                <div class="new-btn">
+                    New
+                </div>
+
+            </div>
+        <?php
+        }
+        ?>
+    </div>
+
+
+    <div class="category-info">
+        <p>Gadget</p>
+        <div class="show-more">
+            <a href="#"> Show more<span class="material-symbols-outlined">
+                    chevron_right
+                </span></a>
+        </div>
+    </div>
+    <div class="card-category">
+        <?php
+        $query3 = 'SELECT * FROM product WHERE p_category = "Gadget" ORDER BY p_id DESC LIMIT 4;';
+        $result = $conn->query($query3);
+        while ($row = $result->fetch_assoc()) {
+        ?>
+            <div class="card">
+
+
+                <div class="product-image">
+                    <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="product-rating">
+
+                    </div>
+                    <p><?php echo $row["p_name"] ?></p>
+                    <p><?php echo $row["p_price"] ?></p>
+                </div>
+                <div class="addtocart">
+                    Add to cart <span class="material-symbols-outlined">
+                        shopping_bag
+                    </span>
+                </div>
+                <div class="new-btn">
+                    New
+                </div>
+
+            </div>
+        <?php
+        }
+        ?>
+    </div>
+
+
+
+
+    <!-- displaying the latest 4 uploaded of evey category in database start -->
 
     <script src="resources/script.js">
 
