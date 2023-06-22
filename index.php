@@ -141,7 +141,7 @@
     <div class="category-info">
         <p>Electronic Device</p>
         <div class="show-more">
-            <a href="#"> Show more<span class="material-symbols-outlined">
+            <a href="./electronicdevice.php"> Show more<span class="material-symbols-outlined">
                     chevron_right
                 </span></a>
         </div>
@@ -184,7 +184,7 @@
     <div class="category-info">
         <p>TV and Homw Appliance</p>
         <div class="show-more">
-            <a href="#"> Show more<span class="material-symbols-outlined">
+            <a href="./homeappliance.php"> Show more<span class="material-symbols-outlined">
                     chevron_right
                 </span></a>
         </div>
@@ -228,7 +228,7 @@
     <div class="category-info">
         <p>Electronic Accessories</p>
         <div class="show-more">
-            <a href="#"> Show more<span class="material-symbols-outlined">
+            <a href="./electronicacceories.php"> Show more<span class="material-symbols-outlined">
                     chevron_right
                 </span></a>
         </div>
@@ -271,7 +271,7 @@
     <div class="category-info">
         <p>Gadget</p>
         <div class="show-more">
-            <a href="#"> Show more<span class="material-symbols-outlined">
+            <a href="./gadget.php"> Show more<span class="material-symbols-outlined">
                     chevron_right
                 </span></a>
         </div>
