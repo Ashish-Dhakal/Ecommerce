@@ -1,4 +1,4 @@
-<?php include './connection/config.php';?>
+<?php include './connection/config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -310,10 +310,11 @@
         ?>
     </div>
 
-
-
-
     <!-- displaying the latest 4 uploaded of evey category in database start -->
+
+    <!-- footer section start -->
+    <?php include './footer.php'; ?>
+    <!-- footer section ends -->
 
     <script src="resources/script.js">
 
