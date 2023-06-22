@@ -1,3 +1,4 @@
+<?php include '../connection/config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,6 +17,8 @@
             Dashboard
         </div>
         <div class="main-cards">
+
+
             <div class="card">
                 <div class="card-inner">
                     <div class="card-heading">
@@ -24,7 +27,21 @@
 
                     <span class="material-symbols-outlined">inventory_2</span>
                 </div>
-                <div class="card-number">4,122</div>
+                <?php
+                $query = 'SELECT COUNT(*) AS total_products FROM product';
+                $result = $conn->query($query);
+
+                if ($result && $result->num_rows > 0) {
+                    $row = $result->fetch_assoc();
+                    $totalProducts = $row['total_products'];
+                } else {
+                    $totalProducts = "No products found.";
+                }
+                ?>
+                <div class="card-number">
+
+
+                    <?php echo $totalProducts; ?></div>
 
             </div>
 
@@ -35,7 +52,20 @@
                     </div>
                     <span class="material-symbols-outlined">person</span>
                 </div>
-                <div class="card-number">4,122</div>
+                <?php
+                $query1 = 'SELECT COUNT(*) AS total_user FROM customer';
+                $result = $conn->query($query1);
+
+                if ($result && $result->num_rows > 0) {
+                    $row = $result->fetch_assoc();
+                    $totalUser = $row['total_user'];
+                } else {
+                    $totalUser = "No products found.";
+                }
+                ?>
+                <div class="card-number">
+                    <?php echo $totalUser; ?>
+                </div>
 
             </div>
 
