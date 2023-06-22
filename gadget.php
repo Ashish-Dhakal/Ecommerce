@@ -6,11 +6,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link rel="stylesheet" href="./resources/css/index.css">
 </head>
 
 <body>
     <?php include './header.php'; ?>
+
+    <div class="search-form">
+        <form action="" class="form">
+            <div class="input_field">
+                <label> Gadget</label>
+            </div>
+            <div class="input_field ">
+                <label class="in-f">Product</label>
+                <select name="cars" id="cars">
+                    <option value="">Select the Product</option>
+                    <option value="Drome">Drone</option>
+                    <option value="VR">VR</option>
+                </select>
+            </div>
+            <div class="input_field">
+                <label class="in-f"> Select Price Range</label>
+                <input type="number" class="input" name="lower-price" placeholder="Min-Price"> -
+                <input type="number" class="input" name="lower-price" placeholder="Max-Price">
+            </div>
+            <div class="input_field">
+                <button type="submit" class="search-btn" name="search-btn"> Search</button>
+            </div>
+        </form>
+
+    </div>
     <div class="card-category">
         <?php
         $query1 = 'SELECT * FROM product WHERE p_category = "Gadget";';
