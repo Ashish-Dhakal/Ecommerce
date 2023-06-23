@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="./resources/css/index.css">
 </head>
 
@@ -141,9 +142,7 @@
     <div class="category-info">
         <p>Electronic Device</p>
         <div class="show-more">
-            <a href="./electronicdevice.php"> Show more<span class="material-symbols-outlined">
-                    chevron_right
-                </span></a>
+            <a href="./electronicdevice.php"> Show more<i class="fa-solid fa-chevron-right"></i></a>
         </div>
     </div>
     <div class="card-category">
@@ -165,9 +164,8 @@
                     <p><?php echo $row["p_name"] ?></p>
                     <p><?php echo $row["p_price"] ?></p>
                 </div>
-                <div class="addtocart">
-                    Add to cart <span class="material-symbols-outlined">
-                        shopping_bag
+                <div class="addtocart" style="justify-content: space-around; ">
+                    Add to cart<i class="fa-solid fa-cart-shopping"></i>
                     </span>
                 </div>
                 <div class="new-btn">
@@ -184,9 +182,7 @@
     <div class="category-info">
         <p>TV and Homw Appliance</p>
         <div class="show-more">
-            <a href="./homeappliance.php"> Show more<span class="material-symbols-outlined">
-                    chevron_right
-                </span></a>
+            <a href="./homeappliance.php"> Show more<i class="fa-solid fa-chevron-right"></i></a>
         </div>
     </div>
     <div class="card-category">
@@ -208,9 +204,8 @@
                     <p><?php echo $row["p_name"] ?></p>
                     <p><?php echo $row["p_price"] ?></p>
                 </div>
-                <div class="addtocart">
-                    Add to cart <span class="material-symbols-outlined">
-                        shopping_bag
+                <div class="addtocart" style="justify-content: space-around; ">
+                    Add to cart<i class="fa-solid fa-cart-shopping"></i>
                     </span>
                 </div>
                 <div class="new-btn">
@@ -228,9 +223,7 @@
     <div class="category-info">
         <p>Electronic Accessories</p>
         <div class="show-more">
-            <a href="./electronicacceories.php"> Show more<span class="material-symbols-outlined">
-                    chevron_right
-                </span></a>
+            <a href="./electronicacceories.php"> Show more<i class="fa-solid fa-chevron-right"></i></a>
         </div>
     </div>
     <div class="card-category">
@@ -252,9 +245,8 @@
                     <p><?php echo $row["p_name"] ?></p>
                     <p><?php echo $row["p_price"] ?></p>
                 </div>
-                <div class="addtocart">
-                    Add to cart <span class="material-symbols-outlined">
-                        shopping_bag
+                <div class="addtocart" style="justify-content: space-around; ">
+                    Add to cart<i class="fa-solid fa-cart-shopping"></i>
                     </span>
                 </div>
                 <div class="new-btn">
@@ -271,9 +263,7 @@
     <div class="category-info">
         <p>Gadget</p>
         <div class="show-more">
-            <a href="./gadget.php"> Show more<span class="material-symbols-outlined">
-                    chevron_right
-                </span></a>
+            <a href=" ./gadget.php"> Show more <i class="fa-solid fa-chevron-right"></i> </a>
         </div>
     </div>
     <div class="card-category">
@@ -295,9 +285,8 @@
                     <p><?php echo $row["p_name"] ?></p>
                     <p><?php echo $row["p_price"] ?></p>
                 </div>
-                <div class="addtocart">
-                    Add to cart <span class="material-symbols-outlined">
-                        shopping_bag
+                <div class="addtocart" style="justify-content: space-around; ">
+                    Add to cart<i class="fa-solid fa-cart-shopping"></i>
                     </span>
                 </div>
                 <div class="new-btn">

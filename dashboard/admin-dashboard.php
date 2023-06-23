@@ -25,7 +25,7 @@
                         Total Product
                     </div>
 
-                    <span class="material-symbols-outlined">inventory_2</span>
+                    <i class="fa-solid fa-warehouse" style="color: #ffffff;"></i>
                 </div>
                 <?php
                 $query = 'SELECT COUNT(*) AS total_products FROM product';
@@ -50,7 +50,7 @@
                     <div class="card-heading">
                         Total User
                     </div>
-                    <span class="material-symbols-outlined">person</span>
+                    <i class="fa-regular fa-user"></i>
                 </div>
                 <?php
                 $query1 = 'SELECT COUNT(*) AS total_user FROM customer';
@@ -74,7 +74,7 @@
                     <div class="card-heading">
                         Ordered Product
                     </div>
-                    <span class="material-symbols-outlined">inactive_order</span>
+                    <i class="fa-thin fa-bags-shopping"></i>
                 </div>
                 <div class="card-number">4,122</div>
 
@@ -85,7 +85,7 @@
                     <div class="card-heading">
                         Processed Product
                     </div>
-                    <span class="material-symbols-outlined">local_shipping</span>
+                    <i class="fa-sharp fa-solid fa-arrow-progress"></i>
                 </div>
                 <div class="card-number">4,122</div>
 
@@ -96,7 +96,7 @@
                     <div class="card-heading">
                         Total sales
                     </div>
-                    <span class="material-symbols-outlined">sell</span>
+                    <i class="fa-sharp fa-solid fa-dollar-sign"></i>
                 </div>
                 <div class="card-number">22</div>
 

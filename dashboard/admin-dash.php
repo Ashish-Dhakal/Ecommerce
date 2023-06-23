@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
-    <!-- google symbol -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- fontaesome symbol -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="dashboard.css">
@@ -31,7 +31,7 @@
             <div class="header-right">
                 <!-- <span class="material-symbols-outlined">notifications</span>
                 <span class="material-symbols-outlined">email</span> -->
-                <span class="material-symbols-outlined">account_circle</span>
+                <i class="fa-solid fa-user"></i>
             </div>
         </header>
         <!-- sidebar -->

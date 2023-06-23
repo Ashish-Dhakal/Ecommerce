@@ -56,12 +56,11 @@
                     <p><?php echo $row["p_name"] ?></p>
                     <p><?php echo $row["p_price"] ?></p>
                 </div>
-                <div class="addtocart">
-                    Add to cart <span class="material-symbols-outlined">
-                        shopping_bag
+                <div class="addtocart" style="justify-content: space-around; ">
+                    Add to cart<i class="fa-solid fa-cart-shopping"></i>
                     </span>
                 </div>
-                
+
 
             </div>
         <?php
