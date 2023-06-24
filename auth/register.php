@@ -46,7 +46,7 @@
 
                     <div class="field button-field">
 
-                        <button type="submit" class="btn" name="submit"> Register</button>
+                        <button type="submit" class="btn" name="register"> Register</button>
                         <!-- <input class="signup link" type="button" name="submit" value="Register"> -->
                         <!-- <a href="#" class="signup link" name="submit"> Register</a> -->
                     </div>
