@@ -238,7 +238,7 @@
 
                 <a href="">
                     <div class="product-image">
-                        <img src="" alt="">
+                        <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
                     </div>
                     <div class="product-info">
                         <div class="product-rating">
