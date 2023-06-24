@@ -56,7 +56,7 @@
 
             while ($row = $result->fetch_assoc()) {
         ?>
-                <div class="card">
+                <div class="card" style="margin-bottom: 25px;">
                     <div class="product-image">
                         <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
                     </div>
@@ -78,7 +78,7 @@
 
             while ($row = $result1->fetch_assoc()) {
             ?>
-                <div class="card">
+                <div class="card" style="margin-bottom: 25px;">
                     <div class="product-image">
                         <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
                     </div>

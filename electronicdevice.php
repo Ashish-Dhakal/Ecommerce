@@ -57,7 +57,7 @@
 
             while ($row = $result->fetch_assoc()) {
         ?>
-                <div class="card">
+                <div class="card" style="margin-bottom: 25px;">
                     <div class="product-image">
                         <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
                     </div>
@@ -79,28 +79,28 @@
 
             while ($row = $result1->fetch_assoc()) {
             ?>
-                <div class="card">
-                    <div class="product-image">
-                        <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
-                    </div>
-                    <div class="product-info">
-                        <div class="product-rating"></div>
-                        <p><?php echo $row["p_name"] ?></p>
-                        <p><?php echo $row["p_price"] ?></p>
-                    </div>
-                    <div class="addtocart">
-                        Add to cart<i class="fa-solid fa-cart-shopping"></i>
-                    </div>
+                <div class="card" style="margin-bottom: 25px;">
+                    <div class=" product-image">
+                    <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
                 </div>
-        <?php
+                <div class="product-info">
+                    <div class="product-rating"></div>
+                    <p><?php echo $row["p_name"] ?></p>
+                    <p><?php echo $row["p_price"] ?></p>
+                </div>
+                <div class="addtocart">
+                    Add to cart<i class="fa-solid fa-cart-shopping"></i>
+                </div>
+    </div>
+<?php
             }
         }
 
 
-        ?>
+?>
 
 
-    </div>
+</div>
 </body>
 
 </html>
