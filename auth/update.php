@@ -1,8 +1,9 @@
+
 <?php include '../connection/config.php'; 
 
  //query to register
 
-if (isset($_POST['submit'])) {
+if (isset($_POST['register'])) {
 
     $c_fname = mysqli_real_escape_string($conn, $_POST['fname']);
     $c_lname = mysqli_real_escape_string($conn, $_POST['lname']);
@@ -11,15 +12,28 @@ if (isset($_POST['submit'])) {
     $c_email = mysqli_real_escape_string($conn, $_POST['email']);
     $c_pass = mysqli_real_escape_string($conn, $_POST['password']);
 
-    $query = "INSERT INTO customer (c_fname	,c_lname,c_address,c_contactno,	c_email,c_pass) VALUES ('$c_fname','$c_lname' , '$c_address','$c_contactno' ,'$c_email' , '$c_pass' )";
-
-    if (mysqli_query($conn, $query)) {
-        header("Location: login.php");
-        exit();
-    } else {
-        echo "Error: " . mysqli_error($conn);
+    $query1 = "Select c_email from customer where c_email = '$c_email' ";
+    $result = $conn->query($query1);
+    $row = $result->fetch_assoc();
+    if($result->num_rows >0){
+        echo 'email already exist';
         die();
-    }  
+    }
+    else{
+        $query = "INSERT INTO customer (c_fname	,c_lname,c_address,c_contactno,	c_email,c_pass) VALUES ('$c_fname','$c_lname' , '$c_address','$c_contactno' ,'$c_email' , '$c_pass' )";
+
+        if (mysqli_query($conn, $query)) {
+            header("Location: login.php");
+            exit();
+        } else {
+            echo "Error:user cannot register ";
+            die();
+        }  
+
+    }
+
+
+    
 }
    //query to login
 
@@ -33,7 +47,10 @@ if  (isset($_POST['login'])) {
     $row = $result->fetch_assoc();
 
     if ($result->num_rows == 1) {
+        $_SESSION['c_fname'] = $row['c_fname'];
+        $_SESSION['c_lname'] = $row['c_lname'];
         header("Location: ../dashboard/user.php");
+       
         exit();
     } else {
         header("Location: ./login.php?error=1");
