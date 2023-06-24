@@ -153,24 +153,25 @@
         ?>
             <div class="card">
 
-
-                <div class="product-image">
-                    <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
-                </div>
-                <div class="product-info">
-                    <div class="product-rating">
-
+                <a href="">
+                    <div class="product-image">
+                        <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
                     </div>
-                    <p><?php echo $row["p_name"] ?></p>
-                    <p><?php echo $row["p_price"] ?></p>
-                </div>
-                <div class="addtocart" style="justify-content: space-around; ">
-                    Add to cart<i class="fa-solid fa-cart-shopping"></i>
-                    </span>
-                </div>
-                <div class="new-btn">
-                    New
-                </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+
+                        </div>
+                        <p><?php echo $row["p_name"] ?></p>
+                        <p><?php echo $row["p_price"] ?></p>
+                    </div>
+                    <div class="addtocart" style="justify-content: space-around; ">
+                        Add to cart<i class="fa-solid fa-cart-shopping"></i>
+                        </span>
+                    </div>
+                    <div class="new-btn">
+                        New
+                    </div>
+                </a>
 
             </div>
         <?php
@@ -193,24 +194,25 @@
         ?>
             <div class="card">
 
-
-                <div class="product-image">
-                    <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
-                </div>
-                <div class="product-info">
-                    <div class="product-rating">
-
+                <a href="">
+                    <div class="product-image">
+                        <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
                     </div>
-                    <p><?php echo $row["p_name"] ?></p>
-                    <p><?php echo $row["p_price"] ?></p>
-                </div>
-                <div class="addtocart" style="justify-content: space-around; ">
-                    Add to cart<i class="fa-solid fa-cart-shopping"></i>
-                    </span>
-                </div>
-                <div class="new-btn">
-                    New
-                </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+
+                        </div>
+                        <p><?php echo $row["p_name"] ?></p>
+                        <p><?php echo $row["p_price"] ?></p>
+                    </div>
+                    <div class="addtocart" style="justify-content: space-around; ">
+                        Add to cart<i class="fa-solid fa-cart-shopping"></i>
+                        </span>
+                    </div>
+                    <div class="new-btn">
+                        New
+                    </div>
+                </a>
 
             </div>
         <?php
@@ -234,24 +236,25 @@
         ?>
             <div class="card">
 
-
-                <div class="product-image">
-                    <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
-                </div>
-                <div class="product-info">
-                    <div class="product-rating">
-
+                <a href="">
+                    <div class="product-image">
+                        <img src="" alt="">
                     </div>
-                    <p><?php echo $row["p_name"] ?></p>
-                    <p><?php echo $row["p_price"] ?></p>
-                </div>
-                <div class="addtocart" style="justify-content: space-around; ">
-                    Add to cart<i class="fa-solid fa-cart-shopping"></i>
-                    </span>
-                </div>
-                <div class="new-btn">
-                    New
-                </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+
+                        </div>
+                        <p><?php echo $row["p_name"] ?></p>
+                        <p><?php echo $row["p_price"] ?></p>
+                    </div>
+                    <div class="addtocart" style="justify-content: space-around; ">
+                        Add to cart<i class="fa-solid fa-cart-shopping"></i>
+                        </span>
+                    </div>
+                    <div class="new-btn">
+                        New
+                    </div>
+                </a>
 
             </div>
         <?php
@@ -274,24 +277,25 @@
         ?>
             <div class="card">
 
-
-                <div class="product-image">
-                    <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
-                </div>
-                <div class="product-info">
-                    <div class="product-rating">
-
+                <a href="">
+                    <div class="product-image">
+                        <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
                     </div>
-                    <p><?php echo $row["p_name"] ?></p>
-                    <p><?php echo $row["p_price"] ?></p>
-                </div>
-                <div class="addtocart" style="justify-content: space-around; ">
-                    Add to cart<i class="fa-solid fa-cart-shopping"></i>
-                    </span>
-                </div>
-                <div class="new-btn">
-                    New
-                </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+
+                        </div>
+                        <p><?php echo $row["p_name"] ?></p>
+                        <p><?php echo $row["p_price"] ?></p>
+                    </div>
+                    <div class="addtocart" style="justify-content: space-around; ">
+                        Add to cart<i class="fa-solid fa-cart-shopping"></i>
+                        </span>
+                    </div>
+                    <div class="new-btn">
+                        New
+                    </div>
+                </a>
 
             </div>
         <?php
