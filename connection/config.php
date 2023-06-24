@@ -1,6 +1,6 @@
 <?php
 session_start();
-$hostname = "http://localhost/ecommerce/";
+$hostname = "http://localhost/ecommerc/";
 
 $conn = new mysqli("localhost", "root", "", "ecommerce");
 // Check connection
