@@ -56,20 +56,22 @@
 
             while ($row = $result->fetch_assoc()) {
         ?>
-                <div class="card">
-                    <div class="product-image" style="margin-bottom: 25px;">
-                        <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
+                <a href="http://localhost/ecommerc/productdisplay.php?id=<?= $row['p_id'] ?>">
+                    <div class="card">
+                        <div class="product-image" style="margin-bottom: 25px;">
+                            <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-rating"></div>
+                            <p><?php echo $row["p_name"] ?></p>
+                            <p><?php echo $row["p_price"] ?></p>
+                        </div>
+                        <div class="addtocart">
+                            Add to cart<i class="fa-solid fa-cart-shopping"></i>
+                        </div>
                     </div>
-                    <div class="product-info">
-                        <div class="product-rating"></div>
-                        <p><?php echo $row["p_name"] ?></p>
-                        <p><?php echo $row["p_price"] ?></p>
-                    </div>
-                    <div class="addtocart">
-                        Add to cart<i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                </div>
-            <?php
+                </a>
+                <?php
             }
         } else {
             // Display all products in 'Gadget' category
@@ -77,26 +79,26 @@
             $result1 = $conn->query($query1);
 
             while ($row = $result1->fetch_assoc()) {
-            ?>
-                <div class="card" style="margin-bottom: 25px;">
-                    <div class="product-image">
-                        <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
+                ?>
+                    <div class="card" style="margin-bottom: 25px;">
+                        <div class="product-image">
+                            <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-rating"></div>
+                            <p><?php echo $row["p_name"] ?></p>
+                            <p><?php echo $row["p_price"] ?></p>
+                        </div>
+                        <div class="addtocart">
+                            Add to cart<i class="fa-solid fa-cart-shopping"></i>
+                        </div>
                     </div>
-                    <div class="product-info">
-                        <div class="product-rating"></div>
-                        <p><?php echo $row["p_name"] ?></p>
-                        <p><?php echo $row["p_price"] ?></p>
-                    </div>
-                    <div class="addtocart">
-                        Add to cart<i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                </div>
-        <?php
+            <?php
             }
         }
 
 
-        ?>
+            ?>
 
 
     </div>

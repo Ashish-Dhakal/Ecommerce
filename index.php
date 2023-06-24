@@ -153,7 +153,7 @@
         ?>
             <div class="card">
 
-                <a href="">
+                <a href="http://localhost/ecommerc/productdisplay.php?id=<?= $row['p_id'] ?>">
                     <div class="product-image">
                         <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
                     </div>
@@ -194,7 +194,7 @@
         ?>
             <div class="card">
 
-                <a href="">
+                <a href="http://localhost/ecommerc/productdisplay.php?id=<?= $row['p_id'] ?>">
                     <div class="product-image">
                         <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
                     </div>
@@ -236,7 +236,7 @@
         ?>
             <div class="card">
 
-                <a href="">
+                <a href="http://localhost/ecommerc/productdisplay.php?id=<?= $row['p_id'] ?>">
                     <div class="product-image">
                         <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
                     </div>
@@ -277,7 +277,7 @@
         ?>
             <div class="card">
 
-                <a href="">
+                <a href="http://localhost/ecommerc/productdisplay.php?id=<?= $row['p_id'] ?>">
                     <div class="product-image">
                         <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
                     </div>
