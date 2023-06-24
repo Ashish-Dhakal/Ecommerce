@@ -22,8 +22,8 @@
 
             <div id="header-top">
                 <nav class="top-header">
-                    <a href="#" class="image"> <img src="./resources/image/E-MALL.png" alt="LOGO"> </a>
-                    <a href="#">
+                    <a href="./index.php" class="image"> <img src="./resources/image/E-MALL.png" alt="LOGO"> </a>
+                    <a href="./index.php">
                         <span class="mall-name">E-MALL</span>
 
                     </a>
