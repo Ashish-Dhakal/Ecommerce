@@ -1,3 +1,6 @@
+<?php include '../connection/config.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="<?= $hostname?>auth/auth.css">
 </head>
 
 <body>
