@@ -67,8 +67,9 @@
                             <p><?php echo $row["p_name"] ?></p>
                             <p><?php echo $row["p_price"] ?></p>
                         </div>
-                        <div class="addtocart">
+                        <div class="addtocart" style="justify-content: space-around; ">
                             Add to cart<i class="fa-solid fa-cart-shopping"></i>
+
                         </div>
                     </div>
                 </a>
@@ -91,17 +92,18 @@
                             <p><?php echo $row["p_name"] ?></p>
                             <p><?php echo $row["p_price"] ?></p>
                         </div>
-                        <div class="addtocart">
+                        <div class="addtocart" style="justify-content: space-around; ">
                             Add to cart<i class="fa-solid fa-cart-shopping"></i>
+
                         </div>
                     </div>
                 </a>
-            <?php
+        <?php
             }
         }
 
 
-            ?>
+        ?>
 
 
     </div>

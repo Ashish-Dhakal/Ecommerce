@@ -66,12 +66,13 @@
                             <p><?php echo $row["p_name"] ?></p>
                             <p><?php echo $row["p_price"] ?></p>
                         </div>
-                        <div class="addtocart">
+                        <div class="addtocart" style="justify-content: space-around; ">
                             Add to cart<i class="fa-solid fa-cart-shopping"></i>
+
                         </div>
                     </div>
                 </a>
-                <?php
+            <?php
             }
         } else {
             // Display all products in 'Gadget' category
@@ -79,7 +80,8 @@
             $result1 = $conn->query($query1);
 
             while ($row = $result1->fetch_assoc()) {
-                ?>
+            ?>
+                <a href="http://localhost/ecommerc/productdisplay.php?id=<?= $row['p_id'] ?>">
                     <div class="card" style="margin-bottom: 25px;">
                         <div class="product-image">
                             <img src="resources/image/uploads/<?php echo $row["p_image"] ?>" alt="">
@@ -89,10 +91,12 @@
                             <p><?php echo $row["p_name"] ?></p>
                             <p><?php echo $row["p_price"] ?></p>
                         </div>
-                        <div class="addtocart">
+                        <div class="addtocart" style="justify-content: space-around; ">
                             Add to cart<i class="fa-solid fa-cart-shopping"></i>
+
                         </div>
                     </div>
+                </a>
             <?php
             }
         }
