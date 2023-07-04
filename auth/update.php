@@ -49,7 +49,8 @@ if  (isset($_POST['login'])) {
     if ($result->num_rows == 1) {
         $_SESSION['c_fname'] = $row['c_fname'];
         $_SESSION['c_lname'] = $row['c_lname'];
-        header("Location: ../dashboard/user.php");
+        $_SESSION['c_id'] = $row['c_id'];
+        header("Location: ../index.php");
        
         exit();
     } else {
