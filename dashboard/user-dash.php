@@ -1,4 +1,10 @@
-<?php include '../connection/config.php'; ?>
+<?php include '../connection/config.php';
+
+if (($_SESSION['c_fname']) == null && ($_SESSION['c_lname']) == null) {
+    header('Location: ../auth/login.php');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,12 +21,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="dashboard.css">
 
 </head>
 
 <body>
-    <div class="grid-container">
+    <div class="grid-container user-container">
         <!-- header -->
         <header class="header">
             <div class="menu-icon" onclick="openSidebar()">
@@ -32,7 +39,12 @@
             <div class="header-right">
                 <!-- <span class="material-symbols-outlined">notifications</span>
                 <span class="material-symbols-outlined">email</span> -->
-                <i class="fa-solid fa-user"></i><?php echo $_SESSION['c_fname']; echo $_SESSION['c_lname'];?>
+                <i class="fa-solid fa-user"></i><?php
+                                                echo $_SESSION['c_fname'];
+                                                echo $_SESSION['c_lname'];
+
+                                                ?>
+
             </div>
         </header>
         <!-- sidebar -->
@@ -45,9 +57,10 @@
             </div>
             <ul class="sidebar-list">
                 <li class="sidebar-list-item"><a href="">Dashboard</a></li>
-                <li class="sidebar-list-item"><a href="">Cart Item</a></li>
+                <li class="sidebar-list-item"><a href="./usercart.php">Cart Item</a></li>
                 <li class="sidebar-list-item"><a href="">Ordered Product</a></li>
                 <li class="sidebar-list-item"><a href="">Purchased Product</a></li>
+                <li class="sidebar-list-item logout"><a href="./logout.php">Log Out</a></li>
             </ul>
 
         </aside>
