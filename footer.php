@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./resources/css/index.css">
-</head>
 <footer>
     <div class="footer-content">
         <div class="column-collection">
 
             <div class="column-one">
-                <div class="title"></div>
+                <div class="title">Main Links</div>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About us</a> </li>
@@ -23,7 +15,7 @@
 
             </div>
             <div class="column-two">
-                <div class="title"></div>
+                <div class="title">Quick Links</div>
                 <ul>
                     <li><a href="">Electronic Device</a></li>
                     <li> <a href="">Home Appliances</a></li>
@@ -34,7 +26,7 @@
             </div>
 
             <div class="column-three">
-                <div class="title"></div>
+                <div class="title">More Links</div>
                 <ul>
                     <li><a href="">Extra Links</a></li>
                     <li> <a href="">Ask Question</a></li>
@@ -46,7 +38,7 @@
             </div>
 
             <div class="column-four">
-                <div class="title"></div>
+                <div class="title">Contact</div>
                 <ul>
                     <li><a href="">E-Mall</a></li>
                     <li><a href="">Chhoerepatan Pokhara</a></li>
