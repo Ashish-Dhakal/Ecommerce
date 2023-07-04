@@ -38,6 +38,16 @@ body{
     height: 100vh;
 
 }
+ .user-container{
+    display: grid;
+    grid-template-columns: 230px 1fr ;    
+    grid-template-rows: 0.2fr 4fr;
+    grid-template-areas: 
+    "sidebar header header header"
+    "sidebar main main main";
+    height: 100vh;
+    
+}
 
 .header{
 grid-area: header;
@@ -95,6 +105,10 @@ box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
     margin-top: -26px;
     list-style: none;
     padding-left: 15px;
+}
+.sidebar-list.logout{
+    padding-top: 150px;
+    
 }
 
 .sidebar-list-item{
