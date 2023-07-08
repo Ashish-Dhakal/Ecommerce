@@ -19,6 +19,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.font-awesome.com/c4522a710f.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
@@ -56,15 +58,16 @@
                                         echo $_SESSION['c_fname'];
                                         ?>
 
-                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                        <?php
+                                        <a href="./dashboard/usercart.php"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <?php
                                     } else { ?>
-                            <a href="./auth/login.php">Login</a>
+                                        <a href="./auth/login.php">Login</a>
 
-                        <?php }
-                        ?>
+                                    <?php }
+                                    ?>
 
-                        </a></li>
+
+                                </a></li>
                         </ul>
                     </nav>
                 </div>
