@@ -56,10 +56,10 @@ if (($_SESSION['c_fname']) == null && ($_SESSION['c_lname']) == null) {
                 <span class="material-symbols-outlined" onclick="closeSidebar()">close</span>
             </div>
             <ul class="sidebar-list">
-                <li class="sidebar-list-item"><a href="">Dashboard</a></li>
+                <li class="sidebar-list-item"><a href="./user.php">Dashboard</a></li>
                 <li class="sidebar-list-item"><a href="./usercart.php">Cart Item</a></li>
-                <li class="sidebar-list-item"><a href="">Ordered Product</a></li>
-                <li class="sidebar-list-item"><a href="">Purchased Product</a></li>
+                <li class="sidebar-list-item"><a href="#">Ordered Product</a></li>
+                <li class="sidebar-list-item"><a href="#">Purchased Product</a></li>
                 <li class="sidebar-list-item logout"><a href="./logout.php">Log Out</a></li>
             </ul>
 
