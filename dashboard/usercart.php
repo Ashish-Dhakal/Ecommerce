@@ -30,7 +30,8 @@
         $totalPrice += $row['total_price'];
     }
     ?>
-
+    <!-- item display in cart -->
+    <h3>Manage Cart Item</h3>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -49,7 +50,7 @@
             ?>
                 <tr>
                     <th scope="row"><?php echo $row['p_name'] ?></th>
-                    <td><img src="../resources/image/uploads/<?php echo $row["p_image"] ?>" alt=""  style="height: 45px;"></td>
+                    <td><img src="../resources/image/uploads/<?php echo $row["p_image"] ?>" alt="" style="height: 45px;"></td>
                     <td><?php echo $row['p_price'] ?></td>
                     <td><?php echo $row['quantity'] ?></td>
                     <td><?php echo $row['total_price'] ?></td>
@@ -62,15 +63,60 @@
             <?php } ?>
             <tr>
                 <th colspan="4" style="text-align: center;">Total</th>
-                <td><?php echo $totalPrice ?></td>
-                <td>
-                    <form method="post" action="">
-                        <button type="submit" name="checkout" value="<?php ?>" class="btn btn-success">Checkout</button>
-                    </form>
-                </td>
+                <td><?php echo $totalPrice;
+
+                    $_SESSION['totalPrice'] =  $totalPrice; ?></td>
+                <td> </td>
             </tr>
         </tbody>
     </table>
+    <br> <br>
+
+    <h3>Process to checkout</h3>
+    <div class="image">
+        <img src="../resources/image/qr-img.jpg" alt="" style="height: 150px;">
+    </div>
+    <h4>Scan me for payment <span style="color: red;">*<span style="font-size: 15px;" >(remember the transaction ID to enter below )</span></span></h4>
+
+    <br>
+    <table class="table table-striped">
+        <tr>
+            <thead>
+
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Total Price</th>
+        </tr>
+        </thead>
+        <tbody>
+            <?php
+            $result->data_seek(0); // Reset the result set pointer
+            while ($row = $result->fetch_assoc()) {
+            ?>
+                <tr>
+                    <th scope="row"><?php echo $row['p_name'] ?></th>
+                    <td><?php echo $row['p_price'] ?></td>
+                    <td><?php echo $row['total_price'] ?></td>
+                </tr>
+            <?php } ?>
+            <tr>
+                <th colspan="2" style="text-align: center;">Total <br>
+                    <form method="post" action="./checkout.php">
+                        <input type="text" name="transaction_id" placeholder="Enter transaction ID of payment" style=" width:260px; " require>
+                        <button type="submit" name="checkout" value="<?php ?>" class="btn btn-success" style="margin-left: 500px;">Checkout</button>
+
+                    </form>
+
+                </th>
+                <td><?php echo $totalPrice ?><br>
+                    <!-- <button type="submit" name="checkout" value="<?php ?>" class="btn btn-success">Checkout</button> -->
+
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+
 </main>
 </body>
 
