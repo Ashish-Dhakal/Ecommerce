@@ -1,3 +1,10 @@
+<?php include '../connection/config.php';
+
+if (($_SESSION['a_email']) == null ) {
+    header('Location: ../auth/admin.php');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,6 +31,7 @@
         <header class="header">
             <div class="menu-icon" onclick="openSidebar()">
                 <span class="material-symbols-outlined">Menu</span>
+                <?php echo $_SESSION['a_email'];?>
             </div>
             <!-- <div class="header-left">
                 <span class="material-symbols-outlined">search</span>
@@ -48,6 +56,7 @@
                 <li class="sidebar-list-item"><a href="">Ordered Product</a></li>
                 <li class="sidebar-list-item"><a href="">Product Process</a></li>
                 <li class="sidebar-list-item"><a href="">Manage Product</a></li>
+                <li class="sidebar-list-item"><a href="./logout.php">Logout</a></li>
             </ul>
 
         </aside>
