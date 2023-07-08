@@ -9,7 +9,12 @@
               JOIN product AS p ON ct.p_id = p.p_id 
               WHERE c.c_fname = '$c_fname' AND c.c_lname = '$c_lname'";
 
+              
+
     $result = $conn->query($query); // Execute the query and assign the result
+
+           $rowCount = $result->num_rows;
+           $_SESSION['rowCount'] = $rowCount;
 
     if (isset($_POST['remove'])) {
         $customerId = intval($_POST['remove']);
@@ -79,6 +84,7 @@
     <h4>Scan me for payment <span style="color: red;">*<span style="font-size: 15px;" >(remember the transaction ID to enter below )</span></span></h4>
 
     <br>
+
     <table class="table table-striped">
         <tr>
             <thead>
@@ -102,20 +108,26 @@
             <tr>
                 <th colspan="2" style="text-align: center;">Total <br>
                     <form method="post" action="./checkout.php">
-                        <input type="text" name="transaction_id" placeholder="Enter transaction ID of payment" style=" width:260px; " require>
+                        <input type="text" name="transaction_id" placeholder="Enter transaction ID of payment" style=" width:260px; " required >
+                        <?php $_SESSION['c_fname'];
+                        $_SESSION['c_lname'];?>
                         <button type="submit" name="checkout" value="<?php ?>" class="btn btn-success" style="margin-left: 500px;">Checkout</button>
 
                     </form>
 
                 </th>
-                <td><?php echo $totalPrice ?><br>
+                <td><?php echo $totalPrice ;
+                 $_SESSION['totalPrice'] = $totalPrice; ?><br>
                     <!-- <button type="submit" name="checkout" value="<?php ?>" class="btn btn-success">Checkout</button> -->
+
 
                 </td>
             </tr>
         </tbody>
 
     </table>
+
+
 
 </main>
 </body>
