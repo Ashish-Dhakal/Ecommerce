@@ -72,6 +72,7 @@ if (isset($_POST['admin_login'])) {
     $row = $result1->fetch_assoc();
 
     if ($result1->num_rows == 1) {
+        $_SESSION['a_email'] = $row['a_email'];
         header("Location:../dashboard/admin-dashboard.php");
         exit();
     } else {
