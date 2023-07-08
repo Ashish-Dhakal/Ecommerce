@@ -51,7 +51,7 @@ if (($_SESSION['c_fname']) == null && ($_SESSION['c_lname']) == null) {
         <aside id="sidebar">
             <div class="sidebar-title">
                 <div class="sidebar-brand">
-                    <a href="./admin-dashboard.php">E-Mall</a>
+                    <a href="../index.php">E-Mall</a>
                 </div>
                 <span class="material-symbols-outlined" onclick="closeSidebar()">close</span>
             </div>
